@@ -5,19 +5,6 @@ import mainLearningEnglish
 import test
 
 
-# def reset(nameFileWithWords):
-#     with open(nameFileWithWords, "w", encoding="utf-8") as jsonFile:
-#         with open(r"C:\Users\Дмитрий\Desktop\Выражения.txt", "r", encoding="utf-8") as file:
-#             phrases = file.readlines()
-#             phrases.sort(key=lambda x: x.lower())
-#             jsonPhrases = {}
-#             for i in phrases:
-#                 key = i[:i.find('-') - 1].lower()
-#                 value = i[i.find('-') + 2:-1].split('; ')
-#                 jsonPhrases[key] = value
-#             json.dump(jsonPhrases, jsonFile)
-
-
 def backupDictionary(nameFileWithWords):
     fileForBackup = r"jsonfiles\backupDictionary.json"
     with open(nameFileWithWords, "r", encoding="utf-8") as jsonFile:
